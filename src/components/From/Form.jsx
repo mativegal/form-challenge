@@ -58,6 +58,7 @@ const Form = () => {
     }
   }
 
+  console.log('appid', process.env.REACT_APP_APP_ID)
   const onReset = () => {
     reset()
   }
