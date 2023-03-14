@@ -52,13 +52,11 @@ const Form = () => {
         ...formData,
       })
       notify(docRef.id)
-      console.log('docref', docRef.id)
     } catch (error) {
       console.log(error)
     }
   }
 
-  console.log('appid', process.env.REACT_APP_APP_ID)
   const onReset = () => {
     reset()
   }
