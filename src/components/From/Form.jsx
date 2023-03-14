@@ -29,20 +29,15 @@ const Form = () => {
   })
 
   const notify = (id) =>
-    toast.success(
-      <Link to={`http://localhost:3000/${id}`}>
-        Aquí puedes ver tu información
-      </Link>,
-      {
-        position: 'top-right',
-        autoClose: false,
-        hideProgressBar: false,
-        closeOnClick: true,
-        pauseOnHover: true,
-        draggable: true,
-        progress: undefined,
-      }
-    )
+    toast.success(<Link to={`/${id}`}>Aquí puedes ver tu información</Link>, {
+      position: 'top-right',
+      autoClose: false,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+    })
 
   const { items } = data
 

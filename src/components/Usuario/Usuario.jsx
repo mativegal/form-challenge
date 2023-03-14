@@ -47,7 +47,7 @@ const Usuario = () => {
         <p>{date}</p>
       </section>
 
-      <Link to={`http://localhost:3000/`} className={styles.back}>
+      <Link to={`/`} className={styles.back}>
         Vuelve al Formulario
       </Link>
     </div>
